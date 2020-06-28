@@ -8,4 +8,4 @@ a3.o: a3.c list.h
 	gcc -c a3.c
 
 clean:
-	  rm  run a3.o list.o
+	rm  run a3.o list.o
