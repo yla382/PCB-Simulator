@@ -1,11 +1,11 @@
-run: list.o a3.o
-	gcc -o run list.o a3.o
+run: list.o pcb_sim.o
+	gcc -o run list.o pcb_sim.o
 
 list.o: list.c list.h
 	gcc -c list.c
 
-a3.o: a3.c list.h
-	gcc -c a3.c
+pcb_sim.o: pcb_sim.c list.h
+	gcc -c pcb_sim.c
 
 clean:
-	rm  run a3.o list.o
+	rm  run pcb_sim.o list.o
